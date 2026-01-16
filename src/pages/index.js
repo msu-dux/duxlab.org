@@ -16,11 +16,12 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p>The DUX Lab is a student-faculty collaborative that designs and builds user interfaces for academic projects, experiential learning engagements&mdash;and sometimes just for fun.</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Work With A DUX Team
           </Link>
         </div>
       </div>
@@ -36,7 +37,6 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
       </main>
     </Layout>
   );
