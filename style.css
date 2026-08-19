@@ -7,6 +7,22 @@
    no build step).
    ========================================================================== */
 
+@font-face {
+	font-family: "Archivo";
+	src: url("fonts/Archivo-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Archivo";
+	src: url("fonts/Archivo-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
 /* --------------------------------------------------------------------------
    1. Custom properties
    -------------------------------------------------------------------------- */
@@ -24,8 +40,8 @@
 	--color-card:        #ffffff;
 
 	/* type */
-	--font-display: "Helvetica Neue", Helvetica, Arial, "Segoe UI", sans-serif;
-	--font-body: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+	--font-display: "Archivo", sans-serif;
+	--font-body: "Archivo", sans-serif;
 	--font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
 
 	/* scale */
@@ -90,7 +106,7 @@ body {
 	color: var(--color-ink);
 	font-family: var(--font-body);
 	font-size: 1rem;
-	line-height: 1.6;
+	line-height: 1.4;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -109,7 +125,7 @@ h1, h2, h3, h4 {
 	letter-spacing: -0.01em;
 }
 
-h1 { font-size: clamp(2.5rem, 4vw + 1rem, 4.5rem); letter-spacing: -0.02em; }
+h1 { font-size: clamp(2rem, 4vw + 1rem, 4rem); letter-spacing: -0.02em; }
 h2 { font-size: clamp(1.75rem, 2vw + 1rem, 2.75rem); }
 h3 { font-size: clamp(1.25rem, 1vw + 1rem, 1.5rem); }
 
@@ -245,10 +261,9 @@ section + section {
 
 .main-nav a {
 	font-family: var(--font-display);
-	font-size: 0.85rem;
-	font-weight: 700;
+	font-size: 1.2rem;
+	font-weight: 400;
 	letter-spacing: 0.04em;
-	text-transform: uppercase;
 	padding-bottom: 0.2rem;
 	border-bottom: 2px solid transparent;
 	-webkit-transition: border-color 0.2s var(--ease), color 0.2s var(--ease);
@@ -268,6 +283,9 @@ section + section {
 .hero {
 	padding-top: var(--space-6);
 	padding-bottom: var(--space-6);
+	background-image: url("images/eur-star.png");
+	background-position: bottom right;
+	background-repeat: no-repeat;
 }
 
 .hero .grid {
@@ -277,19 +295,10 @@ section + section {
 }
 
 .hero-copy { grid-column: 1 / span 8; }
-.hero-aside {
-	grid-column: 9 / span 4;
-	border-left: 1px solid var(--color-line);
-	padding-left: var(--space-3);
-}
-
-.hero-aside p {
-	font-family: var(--font-display);
-	font-size: 0.95rem;
-	color: var(--color-ink-soft);
-}
 
 .hero h1 { margin-bottom: var(--space-3); }
+
+.hero p { font-size: 2rem; }
 
 .hero-actions {
 	display: -webkit-box;
