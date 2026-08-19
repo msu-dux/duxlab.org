@@ -1,0 +1,9 @@
+# DUX Lab
+
+> Design & UX Research Lab
+
+DUX Lab (duxlab.org) is a design and UX research lab.
+
+## Pages
+
+- [Home](https://duxlab.org/index.html): Landing page introducing DUX Lab.
