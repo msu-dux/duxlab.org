@@ -365,12 +365,12 @@ section + section {
 	font-weight: 700;
 	font-size: 0.85rem;
 	letter-spacing: 0.02em;
-	color: var(--color-accent);
+	color: var(--color-ink);
 	border-bottom: 1px solid currentColor;
 }
 
 .text-link:hover, .text-link:focus {
-	color: var(--color-primary);
+	color: var(--color-ink-soft);
 }
 
 /* --------------------------------------------------------------------------
