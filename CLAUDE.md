@@ -16,7 +16,7 @@ duxlab.org is a static, no-build-step website: plain HTML, CSS, and vanilla JS s
 
 ## Design system (in `style.css`)
 
-- Design direction is inspired by the [BFI Design Lab](https://www.bfi.org/programs/bfi-design-lab/): editorial, systems-thinking aesthetic — earthy palette, bold geometric type, generous whitespace, card-based grids.
+- Design direction: editorial, systems-thinking aesthetic — earthy palette, bold geometric type, generous whitespace, card-based grids.
 - All colors, fonts, and spacing are driven by CSS custom properties on `:root` (`--color-*`, `--font-*`, `--space-*`) — change the design by editing these tokens, not by hardcoding values in individual rules.
 - Layout uses a 12-column CSS grid (`.grid` + `.wrap` for the max-width, centered, padded content container). The site header is a deliberate exception: it uses `.site-header-inner` instead of `.wrap` so the header bar spans full viewport width rather than being constrained to the page's max-width column.
 - Responsive breakpoints are at `900px` and `640px`; a `prefers-reduced-motion` block disables transitions/animations globally.
