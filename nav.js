@@ -37,3 +37,28 @@
 		}
 	}, { passive: true });
 })();
+
+/* Toggle the mobile nav menu open/closed. */
+(function () {
+	"use strict";
+
+	var toggle = document.querySelector(".nav-toggle");
+	var nav = document.getElementById("main-nav");
+	if (!toggle || !nav) { return; }
+
+	function closeNav() {
+		toggle.setAttribute("aria-expanded", "false");
+		nav.classList.remove("is-open");
+	}
+
+	toggle.addEventListener("click", function () {
+		var isOpen = nav.classList.toggle("is-open");
+		toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+	});
+
+	nav.addEventListener("click", function (event) {
+		if (event.target.tagName === "A") {
+			closeNav();
+		}
+	});
+})();
